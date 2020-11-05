@@ -1,0 +1,16 @@
+/*
+Theme Name : KeyTheme1
+*/
+
+body{font-family: verdana;}
+.container{max-width: 1200px;}
+.bg-black{background-color: black;}
+header a:link, header a:visited{color: white;}
+header a:hover{color:red;}
+
+.blanc h1, .blanc p, .blanc ul{color: white;}
+.bleu h1, .bleu p, .bleu ul{color: blue;}
+
+@media screen and (min-width: 992px){
+    #intro img{float: left; margin-right: 2rem;}
+}
