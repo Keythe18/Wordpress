@@ -2,4 +2,4 @@
 
 https://alexislans.com
 
-Theme Worpress réalisé en cours WIP
+Theme Wordpress réalisé en cours WIP
