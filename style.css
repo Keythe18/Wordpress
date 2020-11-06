@@ -6,9 +6,10 @@ body{font-family: verdana;}
 .container{max-width: 1200px;}
 .bg-black{background-color: black;}
 header a:link, header a:visited{color: white;}
-header a:hover{color:red;}
+.navbar{background-color: black;}
+.dropdown-menu {background-color: black;}
 
-.blanc h1, .blanc p, .blanc ul{color: white;}
+.blanc h1, .blanc p, .blanc ul{color: black;}
 .bleu h1, .bleu p, .bleu ul{color: blue;}
 
 @media screen and (min-width: 992px){

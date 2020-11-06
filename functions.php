@@ -125,3 +125,19 @@ function commerces_permalinks( $post_link, $post ){
         return $post_link; }
 
 add_filter( 'post_type_link', 'commerces_permalinks', 1, 2 );
+
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'THEMENAME' ),
+) );
+
+function prefix_modify_nav_menu_args( $args ) {
+    return array_merge( $args, array(
+        'walker' => new WP_Bootstrap_Navwalker(),
+    ) );
+}
+add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
